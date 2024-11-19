@@ -1,0 +1,25 @@
+{
+    "name": "user/crud",
+    "description": "This the user crud package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Mohit Singh",
+            "email": "mohit@exiliensoft.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Crud\\User\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "User\\CRUD\\CrudServiceProvider"
+            ]
+        }
+    }
+}
