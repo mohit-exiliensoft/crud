@@ -17,11 +17,11 @@
             "User\\Crud\\": "src/"
         }
     },
-    
+
     "extra": {
         "laravel": {
             "providers": [
-                "USER\\CRUD\\CrudServiceProvider"
+                "User\\Crud\\CrudServiceProvider"
             ]
         }
     }
