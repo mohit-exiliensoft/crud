@@ -14,13 +14,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Mycrud\\Crud\\": "src/"
+            "User\\Crud\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MYCRUD\\CRUD\\CrudServiceProvider"
+                "USER\\CRUD\\CrudServiceProvider"
             ]
         }
     }
