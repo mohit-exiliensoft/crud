@@ -4,6 +4,7 @@ namespace User\Crud\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use DB;
+use Illuminate\Http\Request;
 use User\Crud\Http\Requests\role\CreateRoleRequest;
 use User\Crud\Http\Requests\role\UpdateRoleRequest;
 use User\Crud\Interfaces\RoleRepositoryInterface;
@@ -31,7 +32,7 @@ class RoleController extends Controller
         return view('crud::role.create');
     }
 
-    public function store(CreateRoleRequest $request)
+    public function store(Request $request)
     {
         $roleDetails = $request->only([
             'name',
@@ -55,7 +56,7 @@ class RoleController extends Controller
         return view('crud::role.edit', compact('role'));
     }
 
-    public function update(UpdateRoleRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $roleDetails = $request->only([
             'name',
