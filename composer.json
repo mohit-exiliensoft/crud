@@ -4,6 +4,8 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
+    "prefer-stable": true,
+
     "authors": [
         {
             "name": "Mohit Singh",
