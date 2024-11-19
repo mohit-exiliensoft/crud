@@ -1,5 +1,5 @@
 {
-    "name": "mcrud/crud",
+    "name": "mohit/crud",
     "description": "This the user crud package",
     "type": "library",
     "license": "MIT",
@@ -12,13 +12,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "Mcrud\\Crud\\": "src/"
+            "Mohit\\Crud\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MCRUD\\CRUD\\CrudServiceProvider"
+                "MOHIT\\CRUD\\CrudServiceProvider"
             ]
         }
     }
