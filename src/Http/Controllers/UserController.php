@@ -62,7 +62,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = $this->adminUserRepository->getUserById(($id));
-        return view('crud::user.edit', compact('user','roles'));
+        return view('crud::user.edit', compact('user'));
     }
 
     public function update(UpdateUserRequest $request,$id)
