@@ -62,7 +62,7 @@ class PermissionController extends Controller
             $this->permissionRepository->updatePermission($id, $permissionDetails);
             DB::commit();
 
-            return redirect()->route('permissions.index')->with('message', trans('app.permission.permission_created'));
+            return redirect()->route('permission.index')->with('message', trans('app.permission.permission_created'));
         } catch (\Exception $e) {
             DB::rollBack();
 
@@ -83,7 +83,7 @@ class PermissionController extends Controller
             $this->permissionRepository->deletePermissionById($id);
             DB::commit();
 
-            return redirect()->route('permissions.index')->with('message', trans('app.permission.permission_created'));
+            return redirect()->route('permission.index')->with('message', trans('app.permission.permission_created'));
         } catch (\Exception $e) {
             DB::rollBack();
 

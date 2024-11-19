@@ -30,8 +30,7 @@ class UserController extends Controller
 
     public function create()
     {
-        $roles = Role::get();
-        return view('crud::user.create',compact('roles'));
+        return view('crud::user.create');
     }
 
     public function store(CreateUserRequest $request)
@@ -62,7 +61,6 @@ class UserController extends Controller
 
     public function edit($id)
     {
-        $roles = Role::get();
         $user = $this->adminUserRepository->getUserById(($id));
         return view('crud::user.edit', compact('user','roles'));
     }
@@ -72,11 +70,9 @@ class UserController extends Controller
        $userDetails = $request->only([
         'name',
         'email',
-        'role',
         'status',
         'address',
         'phone',
-
        ]);
        try {
         DB::beginTransaction();
